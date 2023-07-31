@@ -8,6 +8,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Login from './components/Login';
 import Signup from './components/Signup';
+import errorp from './components/errorp';
 const App =() =>{
   return(
     <div>
@@ -19,6 +20,7 @@ const App =() =>{
           <Route path='/Contact' element={<Contact/>} />
           <Route path='/Login' element={<Login/>} />
           <Route path='/Signup' element={<Signup/>} />
+          <Route path='*' Component={errorp} />
         </Routes>
       </>
     </div>
